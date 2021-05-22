@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="pl-PL">
+<head xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <title>Produkcja mebli na wymiar &laquo Ewmar</title>
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zajmujemy się projektowaniem, produkcją i montażem – mebli na wymiar. Nasza oferta obejmuje produkcję i montaż mebli kuchennych, szaf z drzwiami suwanymi, otwieranymi i łamanymi, garderób, mebli łazienkowych, mebli biurowych, mebli nietypowych." /><meta name="keywords" content="Meble na wymiar, Warszawa, EWMAR, sklep meblowy online" />
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        let zmienna;
+        function wysun1(inaczej)
+        {
+            if(inaczej==true)
+            {
+                document.getElementById("side-bar").style.width="40%";
+            }
+            else if(inaczej==false)
+            {
+                document.getElementById("side-bar").style.width="0";
+            }
+
+        }
+        function wysun2(inaczej)
+        {
+            if(inaczej==true){
+                document.getElementsByClassName("wysuwane")[0].style.display="block";
+                let button = document.getElementById("doge");
+                button.onclick=function(){wysun2(false);};
+                button.style.backgroundColor = "rgb(220, 220, 220)";
+            }
+            else if(inaczej==false)
+            {
+                document.getElementsByClassName("wysuwane")[0].style.display="none";
+                let button = document.getElementById("doge");
+                button.onclick=function(){wysun2(true);};
+                button.style.backgroundColor = "transparent";
+            }
+
+        }
+        function wysun3(inaczej)
+        {
+            if(inaczej==true){
+                document.getElementsByClassName("wysuwane")[1].style.display="block";
+                let button = document.getElementById("doge2");
+                button.onclick=function(){wysun3(false);};
+                button.style.backgroundColor = "rgb(220, 220, 220)";
+            }
+            else if(inaczej==false)
+            {
+              document.getElementsByClassName("wysuwane")[1].style.display="none";
+              let button = document.getElementById("doge2");
+              button.onclick=function(){wysun3(true);};
+              button.style.backgroundColor = "transparent";
+            }
+           
+        }
+        
+    </script>
+</head>
+<body >
+    <header>
+        <div class="logo">
+            <img class="img-menu" src="img/logo.png" alt="EWMAR">
+        </div>
+        <div class="menu">
+            <div class="buttons">
+                <button class="main-button">Strona główna</button>
+                <div class="dropdown">
+                    <button class="main-button dropbtn">Oferty</button>
+                    <div class="dropdown-content">
+                        <a href="#">Meble kuchenne</a>
+                        <a href="#">Szafy</a>
+                        <a href="#">Inne</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="main-button dropbtn">Galeria</button>
+                    <div class="dropdown-content">
+                        <a href="#">Meble kuchenne</a>
+                        <a href="#">Szafy</a>
+                        <a href="#">Inne</a>
+                    </div>
+                </div>
+                <button class="main-button">Kontakt</button>
+            </div>
+            <div class="menu-placeholder">
+                <button class="menu-responsive" onclick="wysun1(true)">Menu</button>
+            </div>
+            <div id="side-bar">
+                <button id="zamknij" onclick="wysun1(false)">X</button>
+                <br>
+                <br>
+                <button class="butt" id="first-butt">Strona główna</button>
+                <button class="butt" id="doge" onclick="wysun2(true)">Oferta</button>
+                <div class="wysuwane">
+                    <button class="butt subbutt">Meble kuchenne</button>
+                    <button class="butt subbutt">Szafy</button>
+                    <button class="butt subbutt">Inne</button>
+                </div>
+                <button class="butt" id="doge2" onclick="wysun3(true)">Galeria</button>
+                <div class="wysuwane" >
+                    <button class="butt subbutt">Meble kuchenne</button>
+                    <button class="butt subbutt">Szafy</button>
+                    <button class="butt subbutt">Inne</button>
+                    </div>
+                <button class="butt">Kontakt</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="text_sladera">
+            <div class="text">
+                <h2>Jesteśmy doświadczoną firmą!</h2>
+                <p>Pomogliśmy już ponad 30 klientom. Zostań następnym!</p>
+            </div> 
+        </section>
+        
+        <section id="slider-and-info">
+            <div id="info">
+                <div style="width: 100%; height: 100%;"></div>
+                <h1>O nas</h1>
+                <p>Firma EWMAR zajmuje się projektowaniem, produkcją i montażem mebli na wymiar. Nasza oferta obejmuje produkcję i montaż mebli kuchennych, szaf z drzwiami suwanymi, otwieranymi i łamanymi, garderób, mebli łazienkowych, mebli biurowych, mebli nietypowych.<br>
+                    Zadzwoń do nas lub wyślij zapytanie dotyczące interesujących Cię mebli na adres e-mail. Podaj przybliżone wymiary i opis (może to być zdjęcie, odręczny rysunek wraz z rozmieszczeniem szafek, projekt architektoniczny, ewentualnie materiały, z których mają być wykonane meble), my podamy wstępną wycenę i stworzymy projekt zgodnie z Państwa sugestiami, z uwzględnieniem zasad estetyki, wygody i ergonomii.<br>
+                    Działamy na terenie Warszawy i okolic.</p>
+            </div>
+            <div id="sider">
+                <div style="height: 100%; width: 100%;">
+                </div>
+                <div class="fade_obr fade">
+                    <img src="img/1.jpg" alt="mebel" style="width: 100%;">
+                </div>
+                <div class="fade_obr fade">
+                    <img src="img/2.jpg" alt="mebel" style="width: 100%;">
+                </div>
+                <div class="fade_obr fade"> 
+                    <img src="img/3.jpg" alt="mebel" style="width: 100%;">
+                </div>
+                <div class="fade_obr fade">
+                    <img src="img/4.jpg" alt="mebel" style="width: 100%;"> 
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <script>showSlides()</script>
+        <section id="techniques-info">
+            <div class="tech-box">
+                <h3>Techniki Wytwarzania</h3>
+                <p>Opanowaliśmy wiele technik wytwarzania, dzięki temu kreślimy projekty i tworzymy meble spełniające zamierzone funkcje, trafiające w gusta użytkowników. Skontaktuj się z nami, doradzimy, sporządzimy wstępny projekt bezpłatnie.</p>
+            </div>
+            <div class="tech-box">
+                <h3>Bardzo Nietypowy Mebel?</h3>
+                <p>Wspaniale! Jeśli potrzebujesz mebli o nietypowej konstrukcji, przygotujemy dla Ciebie indywidualną ofertę, skontaktuj się z nami.</p>
+                <br><br><br>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <span>Zdjęcia ze zleceń</span>
+            <div id="pictures">
+                <img src="img/1.jpg" alt="zdjęcie">
+                <img src="img/1.jpg" alt="zdjęcie">
+                <img src="img/1.jpg" alt="zdjęcie">
+            </div>
+        </section>
+        <div id="more-button">
+            <a href="#">Zobacz więcej</a>
+        </div>
+
+        <section id="contact">
+            <h3 style="text-decoration: underline;">Skontaktuj się z nami!</h3>
+            <p>Kontakt telefoniczny:</p>
+            <p><b>793 66 82 42</b></p>
+            <p><b>733 88 50 70</b></p>
+            <p>E-mail:</p>
+            <p><b>info@ewmar-meble.pl</b></p>
+        </section>
+    </main>
+
+    <footer>
+        Made by: someone
+    </footer>
+</body>
+</html>

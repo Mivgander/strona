@@ -11,8 +11,7 @@ function plusSlides(n) {
     timeout = setTimeout(showSlides, 3000);
 }
 
-function showSlides(n, flaga) {
-  console.log(slideIndex.toString());
+function showSlides(n, flaga=false) {
   var i;
   var slides = document.getElementsByClassName("fade_obr");
   if (n > slides.length) {slideIndex = 1}

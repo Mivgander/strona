@@ -39,7 +39,7 @@ header
 .menu
 {  
     float: right;
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
@@ -47,7 +47,12 @@ header
 {
     height: 100% !important;
     width: 80%;
-    float: right;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-button
@@ -65,7 +70,8 @@ header
 
 .main-button:hover
 {
-    border-bottom: 3px solid rgb(25, 36, 85);
+    border-bottom: 3px solid rgb(153, 153, 153);
+    padding-bottom: 13px;
 }
 
 .dropdown
@@ -125,13 +131,13 @@ main
     background-color: rgba(245, 245, 245, .92);
     font-size: 1.6vw;
     text-align: center;
-    padding: 4px 10px;
+    padding: 2% 10%;
     margin: 0 auto;
 }
 
 #slider-and-info
 {
-    background-color: rgb(119, 86, 75);
+    background-color: rgb(185, 185, 185);
     width: 100%;
     padding: 20px 10px;
 }
@@ -155,7 +161,7 @@ main
     position: relative;
     width: 40%;
     float: right;
-    padding: 4px;
+    padding: 8px;
     margin: 2%;
 }
 
@@ -170,9 +176,9 @@ main
     content: ' ';
 }
 
-#sider:before {top:0;left:0;border-width: 2px 0 0 2px}
+#sider:before {top:0;left:0;border-width: 3px 0 0 3px}
 #sider:after {top:0;right:0;border-width: 0 0 0 0}
-#sider>:first-child:before {bottom:0;right:0;border-width: 0 2px 2px 0}
+#sider>:first-child:before {bottom:0;right:0;border-width: 0 3px 3px 0}
 #sider>:first-child:after {bottom:0;left:0;border-width: 0 0 0 0}
 
 .fade_obr{
@@ -185,7 +191,7 @@ main
     top: 50%;
     width: auto;
     margin-top: -22px;
-    margin-right: 4px;
+    margin-right: 8px;
     padding: 16px;
     color: rgb(250, 250, 250);
     font-weight: bold;
@@ -255,8 +261,11 @@ main
 #gallery
 {
     width: 100%;
-    padding: 15px;
-    background-color: rgb(119, 86, 75);
+    padding: 5%;
+    background-image: url("img/tloKuchnia.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
     text-align: center;
 }
 
@@ -265,6 +274,12 @@ main
     padding: 10px;
     font-size: 2.8vw;
     font-weight: bold;
+}
+
+#background-gallery
+{
+    background-color: rgba(250, 250, 250, .92);
+    padding: 2%;
 }
 
 #pictures
@@ -281,9 +296,10 @@ main
 #more-button
 {
     width: 100%;
-    height: 100px;
-    background-color: rgb(119, 86, 75);
-    padding-top: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -292,7 +308,7 @@ main
 {
     width: 22%;
     margin: 20px;
-    border: 10px solid rgb(250, 250, 250);
+    border: 7px solid rgb(250, 250, 250);
     outline: 3px solid black;
 }
 
@@ -313,8 +329,7 @@ main
 
 #more-button a:hover
 {
-    background-color: rgb(119, 86, 75);
-    border: 2px solid rgb(250, 250, 250);
+    background-color: rgb(153, 153, 153);
     color:rgb(250, 250, 250);
     cursor: pointer;
 }
@@ -324,7 +339,7 @@ main
     height: auto;
     width: 100%;
     font-size: 1.3vw;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(185, 185, 185);
     padding: 20px;
     text-align: center;
     color: white;
@@ -345,21 +360,22 @@ footer
     height: 100%;
     width: 20%;
     float: right;
-    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-responsive{
-    display:none;
-    background-color: rgb(119, 86, 75);
+    background-color: rgb(153, 153, 153);
     border: none;
     padding: 4px 15px;
     text-align: center;
     text-decoration: none;
     font-size: 3vw;
-    position: absolute;
-    top: 22%;
-    right: 50%;
+    vertical-align: middle;
     border-radius: 3px;
+    margin-right: 2vw;
     box-shadow: 2px 2px 2px #888888
 }
 .menu_responsive:hover{
@@ -380,7 +396,7 @@ footer
 .butt{
     width: 100%;
     background-color: transparent;
-    border-bottom:1px solid rgb(119, 86, 75);
+    border-bottom:1px solid rgb(153, 153, 153);
     border-top:none;
     border-right:none;
     border-left: none;
@@ -390,7 +406,7 @@ footer
 
 .subbutt
 {
-    background-color: rgb(119, 86, 75);
+    background-color: rgb(153, 153, 153);
     border-bottom: 1px solid rgb(250, 250, 250);
     padding: 11px;
     font-size: 2vw;
@@ -398,11 +414,11 @@ footer
 
 #first-butt
 {
-    border-top: 1px solid rgb(119, 86, 75) !important;
+    border-top: 1px solid rgb(153, 153, 153) !important;
 }
 
 #zamknij{
-    background-color: rgb(119, 86, 75);
+    background-color: rgb(153, 153, 153);
     color: white;
     border-radius: 3px;
     box-shadow: 2px 2px 2px #888888;
@@ -416,8 +432,8 @@ footer
     .buttons {
       display:none;
     }
-    .menu-responsive{
-        display:block;
+    .menu-placeholder{
+        display: flex;
     }
     .text, #contact, #info, .tech-box, #more-button a, footer{
         font-size: 3vw;

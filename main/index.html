@@ -63,9 +63,6 @@
 </head>
 <body >
     <header>
-        <div class="logo">
-            <img class="img-menu" src="img/logo.png" alt="EWMAR">
-        </div>
         <div class="menu">
             <div class="buttons">
                 <button class="main-button">Strona główna</button>
@@ -115,8 +112,7 @@
     <main>
         <section id="text_sladera">
             <div class="text">
-                <h2>Jesteśmy doświadczoną firmą!</h2>
-                <p>Pomogliśmy już ponad x klientom. Zostań następnym!</p>
+                <img src="img/duzeLogo.png" width="100%">
             </div> 
         </section>
         
@@ -147,30 +143,21 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </section>
-        <script>showSlides()</script>
-        <section id="techniques-info">
-            <div class="tech-box">
-                <h3>Techniki Wytwarzania</h3>
-                <p>Opanowaliśmy wiele technik wytwarzania, dzięki temu kreślimy projekty i tworzymy meble spełniające zamierzone funkcje, trafiające w gusta użytkowników. Skontaktuj się z nami, doradzimy, sporządzimy wstępny projekt bezpłatnie.</p>
-            </div>
-            <div class="tech-box">
-                <h3>Bardzo Nietypowy Mebel?</h3>
-                <p>Wspaniale! Jeśli potrzebujesz mebli o nietypowej konstrukcji, przygotujemy dla Ciebie indywidualną ofertę, skontaktuj się z nami.</p>
-                <br><br><br>
-            </div>
-        </section>
+        <script>showSlides(0, false)</script>
 
         <section id="gallery">
-            <span>Zdjęcia ze zleceń</span>
-            <div id="pictures">
-                <img src="img/1.jpg" alt="zdjęcie">
-                <img src="img/1.jpg" alt="zdjęcie">
-                <img src="img/1.jpg" alt="zdjęcie">
+            <div id="background-gallery">
+                <span>Zdjęcia z realizacji</span>
+                <div id="pictures">
+                    <img src="img/1.jpg" alt="zdjęcie">
+                    <img src="img/1.jpg" alt="zdjęcie">
+                    <img src="img/1.jpg" alt="zdjęcie">
+                    <div id="more-button">
+                        <a href="#">Zobacz więcej</a>
+                    </div>
+                </div>
             </div>
         </section>
-        <div id="more-button">
-            <a href="#">Zobacz więcej</a>
-        </div>
 
         <section id="contact">
             <h3 style="text-decoration: underline;">Skontaktuj się z nami!</h3>

@@ -456,7 +456,7 @@ footer
     #pictures img{
         width: 35%;
     }
-    #gallery>span
+    #gallery span
     {
         font-size: 4vw;
     }
@@ -479,3 +479,26 @@ footer
 
 }
 
+@media only screen and (max-width: 600px)
+{
+    #info
+    {
+        font-size: 4vw;
+        line-height: 4.2vw;
+    }
+
+    #gallery span
+    {
+        font-size: 5.5vw;
+    }
+
+    .butt
+    {
+        font-size: 3vw;
+    }
+
+    .subbutt
+    {
+        font-size: 2.6vw;
+    }
+}

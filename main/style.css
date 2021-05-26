@@ -340,7 +340,7 @@ main
     width: 100%;
     font-size: 1.3vw;
     background-color: rgb(185, 185, 185);
-    padding: 20px;
+    padding: 1vw;
     text-align: center;
     color: white;
 }
@@ -401,7 +401,7 @@ footer
     border-right:none;
     border-left: none;
     padding: 18px;
-    font-size: 2.4vw;
+    font-size: 3vw;
 }
 
 .subbutt
@@ -421,7 +421,9 @@ footer
     background-color: rgb(153, 153, 153);
     color: white;
     border-radius: 3px;
+    font-size: 2vw;
     box-shadow: 2px 2px 2px #888888;
+    padding: .5vw 1vw;
     margin: 13px;
 }
 .wysuwane{
@@ -484,7 +486,7 @@ footer
     #info
     {
         font-size: 4vw;
-        line-height: 4.2vw;
+        line-height: 4.4vw;
     }
 
     #gallery span
@@ -494,11 +496,11 @@ footer
 
     .butt
     {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .subbutt
     {
-        font-size: 2.6vw;
+        font-size: 3.5vw;
     }
 }

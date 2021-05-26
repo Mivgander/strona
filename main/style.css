@@ -494,9 +494,14 @@ footer
         font-size: 5.5vw;
     }
 
-    .butt
+    .butt, #zamknij
     {
         font-size: 4vw;
+    }
+
+    #zamknij
+    {
+        padding: .5vw 1.8vw;
     }
 
     .subbutt

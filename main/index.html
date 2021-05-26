@@ -27,14 +27,14 @@
         function wysun3(inaczej)
         {
             if(inaczej==true){
-                document.getElementsByClassName("wysuwane")[1].style.display="block";
+                document.getElementsByClassName("wysuwane")[0].style.display="block";
                 let button = document.getElementById("doge2");
                 button.onclick=function(){wysun3(false);};
                 button.style.backgroundColor = "rgb(220, 220, 220)";
             }
             else if(inaczej==false)
             {
-              document.getElementsByClassName("wysuwane")[1].style.display="none";
+              document.getElementsByClassName("wysuwane")[0].style.display="none";
               let button = document.getElementById("doge2");
               button.onclick=function(){wysun3(true);};
               button.style.backgroundColor = "transparent";

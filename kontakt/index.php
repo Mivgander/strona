@@ -55,7 +55,7 @@
 
             if(empty($emailErr) && empty($nameErr))
             {
-                if(mail("patrykw-01@wp.pl", $topic, $text))
+                if(mail("info@ewmar-meble.pl", $topic, $text))
                 {
                     $result = 1;
                 }

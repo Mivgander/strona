@@ -1,0 +1,226 @@
+#slider-and-info
+{
+    background-color: rgb(153, 153, 153);
+    width: 100%;
+    padding: 20px 10px;
+}
+
+#slider-and-info>div
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#info
+{
+    padding-left: 6%;
+    width: 50%;
+    text-align: justify;
+    line-height: 2vw;
+    font-size: 1.4vw;
+}
+
+#sider{
+    position: relative;
+    width: 40%;
+    float: right;
+    padding: 8px;
+    margin: 2%;
+}
+
+#sider::before, #sider::after, #sider>:first-child::before,
+#sider>:first-child::after
+{
+    position:absolute;
+    width: 10%;
+    height: 10%;
+    border-color: rgb(250, 250, 250);
+    border-style: solid;
+    content: ' ';
+}
+
+#sider:before {top:0;left:0;border-width: 3px 0 0 3px}
+#sider:after {top:0;right:0;border-width: 0 0 0 0}
+#sider>:first-child:before {bottom:0;right:0;border-width: 0 3px 3px 0}
+#sider>:first-child:after {bottom:0;left:0;border-width: 0 0 0 0}
+
+.fade_obr{
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-right: 8px;
+    padding: 16px;
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(88, 47, 30, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}    
+
+#gallery
+{
+    width: 100%;
+    padding: 5%;
+    background-image: url("../img/tloKuchnia2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    text-align: center;
+}
+
+#gallery span
+{
+    padding: 10px;
+    font-size: 2.8vw;
+    font-weight: bold;
+}
+
+#background-gallery
+{
+    background-color: rgba(153, 153, 153, 0.92);
+    padding: 2%;
+}
+
+#pictures
+{
+    width: 100%;
+}
+
+#pictures>img
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#more-button
+{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+#pictures img
+{
+    width: 22%;
+    margin: 20px;
+    border: 7px solid rgb(250, 250, 250);
+    outline: 3px solid black;
+}
+
+#more-button a
+{
+    width: auto;
+    height: auto;
+    background-color: rgb(153, 153, 153);
+    border: 2px solid rgb(37, 37, 37);
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 15px auto 0 auto;
+    text-decoration: none;
+    color: black;
+    /*border: 2px solid transparent;*/
+    transition: all 0.4s ease-in-out;
+}
+
+#more-button a:hover
+{
+    background-color: rgb(37, 37, 37);
+    color:rgb(250, 250, 250);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+
+    #info, #more-button a{
+        font-size: 3vw;
+    }
+    #info{
+        line-height: 3.5vw;
+        width: 90%;
+        position: relative;
+        padding: 0 5%;
+        margin: 0 5%;
+    }
+    #sider{
+        display: none !important;
+
+    }
+    #pictures img{
+        width: 35%;
+    }
+    #gallery span
+    {
+        font-size: 4vw;
+    }
+
+    #info::before, #info::after, #info>:first-child:before,
+    #info>:first-child:after
+    {
+        position:absolute;
+        width: 9%;
+        height: 9%;
+        border-color: rgb(250, 250, 250);
+        border-style: solid;
+        content: ' ';
+    }
+
+    #info:before {top:0;left:0;border-width: 2px 0 0 2px}
+    #info:after {top:0;right:0;border-width: 0 0 0 0}
+    #info>:first-child:before {bottom:0;right:0;border-width: 0 2px 2px 0}
+    #info>:first-child:after {bottom:0;left:0;border-width: 0 0 0 0}
+
+}
+
+@media only screen and (max-width: 600px)
+{
+    #info
+    {
+        font-size: 4vw;
+        line-height: 4.4vw;
+    }
+
+    #gallery span
+    {
+        font-size: 5.5vw;
+    }
+
+}
